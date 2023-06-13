@@ -1,0 +1,22 @@
+{
+  "name": "qrgeek",
+  "version": "1.0.0",
+  "description": "A custom QR code generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewZenn/QRGeek.git"
+  },
+  "author": "Matthew Zenn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewZenn/QRGeek/issues"
+  },
+  "homepage": "https://github.com/MatthewZenn/QRGeek#readme",
+  "dependencies": {
+    "electron": "^25.1.0"
+  }
+}
