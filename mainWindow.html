@@ -6,6 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -15,11 +16,11 @@
             <span class="exit" onclick="window.close()">&#xE711;</span>
             <span class="min" id="min">&#xE738;</span>
         </header>
-        <div class="panel"></div>
-        <canvas id="canvas" width="21" height="21"></canvas>
-        <span id="span"></span>
-        <button id="generate">Generate</button>
-        <script src="index.js" async defer></script>
+        <div class="panel">
+          <input type="text" id="textfield" placeholder="Text">
+        </div>
+        <div id="qrcode-container"></div>
+        <button id="generate">&#xED14; Generate</button>
         <script src="logic.js" async defer></script>
     </body>
 </html>

@@ -72,29 +72,15 @@ header {
     font-size: 10pt;
 }
 
-#canvas {
+#qrcode-container {
     position: fixed;
     width: 500px;
     height: 500px;
-    background-color: white;
     top: 40%;
     right: 150px;
     transform: translate(0%, -50%);
     image-rendering: pixelated;
-    border: 2px solid white;
-}
-
-#span {
-    position: fixed;
-    width: 550px;
-    height: 550px;
-    background-color: white;
-    top: 40%;
-    right: 125px;
-    transform: translate(0%, -50%);
-    image-rendering: pixelated;
-    border: 2px solid white;
-    z-index: -1;
+    border: 1px solid rgb(200, 200, 200);
 }
 
 #generate {
@@ -105,9 +91,40 @@ header {
     top: 80%;
     right: 250px;
     transform: translate(-25%, -50%);
-    image-rendering: pixelated;
     border: none;
     border-radius: 10px;
     color: white;
-    font-size: 16pt;
+    font-size: 18pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, SegoeIcons;
+}
+
+#generate:hover {
+  cursor: pointer;
+  background-color: rgb(183, 76, 255);
+}
+
+.panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: rgb(20, 20, 20);
+  border-right: 1px solid rgb(40, 40, 40);
+  z-index: -1;
+  display: flex;
+}
+
+#textfield {
+  position: relative;
+  top: 100px;
+  margin-top: 15px;
+  width: 80%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(40, 40, 40);
+  color: white;
+  outline: none;
+  font-size: 14pt;
 }
